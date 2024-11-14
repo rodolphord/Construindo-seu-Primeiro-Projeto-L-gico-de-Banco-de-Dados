@@ -1,0 +1,10 @@
+		
+- Inserção em Cliente<br>INSERT INTO Cliente (nome, tipo_cliente, cpf_cnpj, endereco) VALUES<br>('Empresa ABC', 'PJ', '12.345.678/0001-99', 'Endereço 1'),<br>('João da Silva', 'PF', '123.456.789-00', 'Endereço 2');</p>
+<p>-- Inserção em Produto<br>INSERT INTO Produto (nome, preco) VALUES<br>('Notebook', 2500.00),<br>('Celular', 1500.00);</p>
+<p>-- Inserção em Fornecedor<br>INSERT INTO Fornecedor (nome, contato) VALUES<br>('Fornecedor X', 'contato@fornecedorx.com'),<br>('Fornecedor Y', 'contato@fornecedory.com');</p>
+<p>-- Relacionamento entre Produto e Fornecedor<br>INSERT INTO Produto_Fornecedor (produto_id, fornecedor_id) VALUES<br>(1, 1),<br>(2, 2);</p>
+<p>-- Inserção em Estoque<br>INSERT INTO Estoque (produto_id, quantidade) VALUES<br>(1, 100),<br>(2, 50);</p>
+<p>-- Inserção em FormaPagamento<br>INSERT INTO FormaPagamento (tipo_pagamento) VALUES<br>('Cartão de Crédito'),<br>('Boleto');</p>
+<p>-- Inserção em Pedido<br>INSERT INTO Pedido (cliente_id, data_pedido, total) VALUES<br>(1, '2023-01-01', 5000.00),<br>(2, '2023-02-01', 3000.00);</p>
+<p>-- Relacionamento entre Pedido e FormaPagamento<br>INSERT INTO Pedido_FormaPagamento (pedido_id, pagamento_id) VALUES<br>(1, 1),<br>(2, 2);</p>
+<p>-- Inserção em Entrega<br>INSERT INTO Entrega (pedido_id, status, codigo_rastreio) VALUES<br>(1, 'Em transporte', 'BR123456789'),<br>(2, 'Entregue', 'BR987654321');</p></body></html>
